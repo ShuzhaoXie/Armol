@@ -11,6 +11,7 @@ Download preprocessed prediction [data]() and decompress it in `data` directory.
 python train.py
 ```
 ## Dataset description
+** The link of data will be established soon. **
  We request AWS Rekognition (AWS), Azure Computer Vision (AZU), Google Cloud Vision AI (GCP), and Aliyun Object Detection Service (ALI) 
  via Python SDK and capture the TCP packets by `tcpdump`. 
 ### Prediction
