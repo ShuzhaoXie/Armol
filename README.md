@@ -20,7 +20,7 @@ pip install -r requirements.txt
 
 2. Download [preprocessed prediction dataset](https://drive.google.com/file/d/1DyxMAtetl6RlLJUVEM_mC8_C8MnFMUog/view?usp=sharing), which contains `train` and `test` directory, extract them into the `data` directory. There are `aws`, `azure`, `google`, and `ground-truth` dirs in each dir. The `ground-truth` is derived from the [COCO dataset](https://cocodataset.org/#download), whose origin form is a json file for all images. I transform the origin json file into a directory contains a series of texts files for the purpose of training RL models. The `train/test/*/0.txt` stands for the ground truth or predictions of train/test image. The mapping of image's name to its rank can be found at `src/scripts/*rank.json`.
    
-3. Download the [COCO dataset 2017 Train and Val Images](https://cocodataset.org/#download), then extract these images into `data/train/images` and `data/test/images` directoris, respectively. Due to the ground truth of COCO 2017 test images has not been released, we put the validation set as the test set in our experiments.
+3. Download the [COCO dataset 2017 Train and Val Images](https://cocodataset.org/#download), then extract these images into `data/train/images` and `data/test/images` directories, respectively. Due to the ground truth of COCO 2017 test images has not been released, we put the validation set as the test set in our experiments.
    
 4. Replace the `WORKDIR` in `src/common.py` with your current work directory.
 
@@ -52,7 +52,7 @@ We record the packet files from AWS, AZU, and GCP with `tcpdump`. You can open t
 If you want to repeat the measurments, please modify the `SUB_KEY` and `END_POINT` variables in `src/deploy/azure_sender.py` and config your aws and google cloud accounts. Please refer to their offical documentations for more details. 
 
 ## Raw data
-If you want the raw returned predictions from AWS, AZU, and GCP, please draw an email to `xiesz1999@163.com`. To be honest, I'm too lazy to sort through the clutter files if no one needs them. However, if you really need these files, feel free to ask me :).
+If you want the raw returned predictions from AWS, AZU, and GCP, please send an email to `xiesz1999@163.com`. To be honest, I'm too lazy to sort through the clutter files if no one needs them. However, if you really need these files, feel free to ask me :).
 
 ## Synonyms table
 This table is placed in `src/sripts/word2num.json`, most of the entries are refered from [WordNet](https://wordnet.princeton.edu).
