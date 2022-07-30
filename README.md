@@ -35,7 +35,7 @@ python train.py
     ```bash
     pip install scapy
     ```
-2. Download latency records that in `.pcap` forma. Extract them in anywhere you want. Just modify the input data paths (maybe `lag_dir` or other variables) to the path you store the `.pcap` files. These paths are in latency analysis files that placed in `src/latency` directory. Because these files require a huge place to store, I upload them to Baidu NetDisk. Here is the link and key:
+2. Download latency records that in `.pcap` format. Extract them in anywhere you want. Just modify the input data paths (maybe `lag_dir` or other variables) to the path you store the `.pcap` files. These paths are in latency analysis files that placed in `src/latency` directory. Because these files require a huge place to store, I upload them to Baidu NetDisk. Here is the link and key:
     ```bash
     link: https://pan.baidu.com/s/15xW6xPZ5ubVJj_WmZi-HLg
     key: stv8 
@@ -55,7 +55,7 @@ If you want to repeat the measurments, please modify the `SUB_KEY` and `END_POIN
 If you want the raw returned predictions from AWS, AZU, and GCP, please draw an email to `xiesz1999@163.com`. To be honest, I'm too lazy to sort through the clutter files if no one needs them. However, if you really need these files, feel free to ask me :).
 
 ## Synonyms table
-This table is placed in `src/sripts/word2num.json`, most of the entried are refered from [WordNet](https://wordnet.princeton.edu).
+This table is placed in `src/sripts/word2num.json`, most of the entries are refered from [WordNet](https://wordnet.princeton.edu).
 
 ## Details of simulated MLaaSes 
 I borrowed the pre-trained models from [detectron2](https://github.com/facebookresearch/detectron2) and [Tensorflow model gardem](https://github.com/tensorflow/models) to simulate 7 MLaaSes. If you want to replicate the expertiment, please precess the predictions from these models into the format of `data/train/google`. For more details, please refer to `src/simulate`.
