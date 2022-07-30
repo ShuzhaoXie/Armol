@@ -1,4 +1,4 @@
-# Armol
+# Armol [[arXiv]](https://arxiv.org/pdf/2204.13971.pdf) [[Slides]](./assets/armol-slides.pdf) [[Project]](https://mmlabsigs.notion.site/Cost-Effective-MLaaS-Federation-A-Combinatorial-Reinforcement-Learning-Approach-fd27b02a403240f3b55ec26ad5ba00db) 
 This is the code for paper "Cost Effective MLaaS Federation: A Combinatorial Reinforcement Learning Approach" published in INFOCOM 2022.
 ## Setup
 ### Environment
@@ -35,7 +35,7 @@ python train.py
     ```bash
     pip install scapy
     ```
-2. Download latency records that in `.pcap` format. Extract them in anywhere you want. Just modify the input data paths (maybe `lag_dir` or other variables) to the path you store the `.pcap` files. These paths are in latency analysis files that placed in `src/latency` directory. Because these files require a huge place to store, I upload them to Baidu NetDisk. Here is the link and key:
+2. Download latency records that in `.pcap` format. Extract them in anywhere you want. Just modify the input data paths (maybe `lag_dir` or other variables) to the path you store the `.pcap` files. These paths are in latency analysis files that placed in `src/latency` directory. Because these files require a huge place to store, I upload them to Baidu NetDisk. Here are the link and key:
     ```bash
     link: https://pan.baidu.com/s/15xW6xPZ5ubVJj_WmZi-HLg
     key: stv8 
@@ -58,7 +58,7 @@ If you want the raw returned predictions from AWS, AZU, and GCP, please draw an 
 This table is placed in `src/sripts/word2num.json`, most of the entries are refered from [WordNet](https://wordnet.princeton.edu).
 
 ## Details of simulated MLaaSes 
-I borrowed the pre-trained models from [detectron2](https://github.com/facebookresearch/detectron2) and [Tensorflow model gardem](https://github.com/tensorflow/models) to simulate 7 MLaaSes. If you want to replicate the expertiment, please precess the predictions from these models into the format of `data/train/google`. For more details, please refer to `src/simulate`.
+I borrowed the pre-trained models from [detectron2](https://github.com/facebookresearch/detectron2) and [Tensorflow model gardem](https://github.com/tensorflow/models) to simulate 7 MLaaSes. If you want to replicate the expertiment, please transform the predictions of these models into the format that utilized in `data/train/google`. For more details, please refer to `src/simulate`.
 
 ```python
 MODELS_SELECT = {
@@ -92,4 +92,4 @@ This work is supported in part by NSFC (Grant No. 61872215), and Shenzhen Scienc
 We would like to thank Tencent for sponsoring the research.
 
 ## Appendix
-There are also many other interesting discoveries, I will summary them when I get a day off. Besides, you can find them by yourself. 
+There are also many other interesting discoveries, I will summary them when I get a day off. Also, you can find them by yourself. 
