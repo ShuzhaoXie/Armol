@@ -41,7 +41,7 @@ python train.py
     key: stv8 
     ```
 
-### Analysis latency
+### Analyze latency
 We request AWS Rekognition (AWS), Azure Computer Vision (AZU), Google Cloud Vision AI (GCP), and Aliyun Object Detection Service (ALI) via Python SDK and capture the TCP packets by `tcpdump`. We devide the latency into transmission 
 latency and inference latency. By indexing the packet with special HTTP code,
 we distinguish the first packet and the last packet in a request. Thus we can get the full latency. And the transimission latency can be calculated by indexing the first packet and the last ack packet from server. We also find that the ip of MLaaS is not constant, and GCP would help the customer to locate the service with lowest latency. You can find the measurement time of a file by its name, such as `20210508_010101.cap`. And `us2sg` means send a request from a VM in the United States to Singapore. Please refer to the `src/latency` directory for more details. 
