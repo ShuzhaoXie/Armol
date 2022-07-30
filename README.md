@@ -58,7 +58,7 @@ If you want the raw returned predictions from AWS, AZU, and GCP, please send an 
 This table is placed in `src/sripts/word2num.json`, most of the entries are refered from [WordNet](https://wordnet.princeton.edu).
 
 ## Details of simulated MLaaSes 
-I borrowed the pre-trained models from [detectron2](https://github.com/facebookresearch/detectron2) and [Tensorflow model gardem](https://github.com/tensorflow/models) to simulate 7 MLaaSes. If you want to replicate the expertiment, please transform the predictions of these models into the format that utilized in `data/train/google`. For more details, please refer to `src/simulate`.
+I borrowed the pre-trained models from [detectron2](https://github.com/facebookresearch/detectron2) and [Tensorflow model garden](https://github.com/tensorflow/models) to simulate 7 MLaaSes. If you want to replicate the expertiment, please transform the predictions of these models into the format that utilized in `data/train/google`. For more details, please refer to `src/simulate`.
 
 ```python
 MODELS_SELECT = {
